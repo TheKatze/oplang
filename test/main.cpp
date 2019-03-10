@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <library/Container.h>
+#include <Interpreter.h>
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
@@ -7,5 +7,5 @@ int main(int argc, char **argv) {
 }
 
 TEST(ContainerTest, BasicFunctionality) {
-    Container().hello();
+
 }
