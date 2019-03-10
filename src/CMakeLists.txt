@@ -1,5 +1,5 @@
 # define the source files of the library
-SET(INTERPRETER_SRC Interpreter.h Interpreter.cpp util/FileLoader.cpp util/FileLoader.h util/Logger.cpp util/Logger.h)
+SET(INTERPRETER_SRC Interpreter.h Interpreter.cpp util/FileLoader.cpp util/FileLoader.h util/Logger.cpp util/Logger.h Token.h)
 
 # create a statically linked library
 ADD_LIBRARY(interpreter_lib STATIC ${INTERPRETER_SRC})

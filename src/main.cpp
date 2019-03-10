@@ -7,9 +7,15 @@
 #include <util/Logger.h>
 
 int main(void) {
-    Interpreter interPeter();
+    Interpreter interPeter;
 
     Logger::info(FileLoader::loadFile("../../assets/test.txt"));
+
+    std::vector<Token> tokens = interPeter.tokenize(FileLoader::loadFile("../../assets/test.txt"));
+
+    for (Token token : tokens) {
+        Logger::info(token.m_value);
+    }
 
     return 0;
 }
