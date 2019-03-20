@@ -7,11 +7,12 @@
 
 #include <string>
 #include <vector>
+#include "TokenType.h"
 
 class Token {
 public:
+    TokenType m_type;
     std::string m_value;
-    std::vector<Token> m_children;
 };
 
 #endif //OPLANG_TOKEN_H
