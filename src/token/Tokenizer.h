@@ -6,11 +6,18 @@
 #define OPLANG_TOKENIZER_H
 
 #include <string>
+#include <vector>
+
 #include "Token.h"
 
 class Tokenizer {
+    unsigned int m_pos;
+
+    std::string parseNumber(const std::string& input);
 public:
-    Token tokenize(std::string input);
+    Tokenizer();
+    ~Tokenizer() = default;
+    std::vector<Token> tokenize(const std::string& input);
 };
 
 

@@ -16,4 +16,8 @@ enum TokenType : unsigned char {
     END_OF_FILE = 0xff
 };
 
+namespace TokenTypes {
+
+}
+
 #endif //OPLANG_TOKENTYPE_H

@@ -7,9 +7,15 @@
 
 #include "NodeType.h"
 
+// Forward declare
+class Node;
+
 class Node {
 public:
     NodeType m_nodeType;
+
+    Node* m_left;
+    Node* m_right;
 };
 
 
