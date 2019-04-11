@@ -8,11 +8,10 @@
 #include <string>
 #include <vector>
 
-#include "Token.h"
+#include "Token/Token.h"
 
 class Interpreter {
 public:
-    std::vector<Token> tokenize(std::string source);
 };
 
 

@@ -11,11 +11,5 @@ int main(void) {
 
     Logger::info(FileLoader::loadFile("../../assets/test.txt"));
 
-    std::vector<Token> tokens = interPeter.tokenize(FileLoader::loadFile("../../assets/test.txt"));
-
-    for (Token token : tokens) {
-        Logger::info(token.m_value);
-    }
-
     return 0;
 }
