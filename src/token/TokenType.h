@@ -6,18 +6,15 @@
 #define OPLANG_TOKENTYPE_H
 
 enum TokenType : unsigned char {
+    NONE = 0x00,
     INT = 0x01,
-    PLUS = 0x10,
-    MINUS = 0x11,
-    MULT = 0x12,
+    ADD = 0x10,
+    SUB = 0x11,
+    MUL = 0x12,
     DIV = 0x13,
     PAR_OPEN = 0x20,
     PAR_CLOSE = 0x21,
     END_OF_FILE = 0xff
 };
-
-namespace TokenTypes {
-
-}
 
 #endif //OPLANG_TOKENTYPE_H
